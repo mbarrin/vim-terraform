@@ -3,5 +3,6 @@
 silent! autocmd! filetypedetect BufRead,BufNewFile *.tf
 autocmd BufRead,BufNewFile *.hcl,*.tfbackend set filetype=hcl
 autocmd BufRead,BufNewFile .terraformrc,terraform.rc set filetype=hcl
-autocmd BufRead,BufNewFile *.tf,*.tfvars,*.tftest.hcl set filetype=terraform
+autocmd BufRead,BufNewFile *.tf,*.tftest.hcl set filetype=terraform
+autocmd BufRead,BufNewFile *.tfvars set filetype=terraform-vars
 autocmd BufRead,BufNewFile *.tfstate,*.tfstate.backup set filetype=json
